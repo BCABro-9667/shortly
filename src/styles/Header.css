@@ -1,0 +1,166 @@
+.header {
+  padding: 20px 0;
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--neutral-very-dark-violet);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0 30px 0 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--neutral-grayish-violet);
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links a:hover {
+  color: var(--neutral-very-dark-violet);
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  color: var(--neutral-grayish-violet);
+  font-weight: 700;
+  margin-right: 15px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-btn:hover {
+  color: var(--neutral-very-dark-violet);
+}
+
+.signup-btn {
+  background-color: var(--primary-cyan);
+  color: var(--white);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signup-btn:hover {
+  opacity: 0.7;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  .nav-links,
+  .nav {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-links.mobile-open,
+  .nav.mobile-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-dark-violet);
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  .nav-links.mobile-open {
+    margin-top: 20px;
+  }
+
+  .nav-links.mobile-open li {
+    margin: 15px 0;
+  }
+
+  .nav-links.mobile-open a {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .nav.mobile-open {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 10px;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .login-btn {
+    margin-right: 0;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .signup-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .header {
+    padding: 15px 0;
+  }
+}

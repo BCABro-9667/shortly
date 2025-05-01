@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import './styles/variables.css';
+@import './styles/global.css';
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+
+.get-started-btn{
+  padding: 15px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+
+}

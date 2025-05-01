@@ -1,0 +1,93 @@
+.shortener-form-container {
+    background-color: var(--primary-dark-violet);
+    background-image: url('/images/bg-shorten-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: -80px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .shortener-form {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .shortener-form.error {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .input-group {
+    flex: 1;
+    position: relative;
+  }
+  
+  .shortener-form input {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+
+  }
+  
+  .shortener-form input.error {
+    border: 3px solid var(--secondary-red);
+  }
+  
+  .shortener-form input.error::placeholder {
+    color: var(--secondary-red);
+    opacity: 0.5;
+  }
+  
+  .error-message {
+    color: var(--secondary-red);
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  .shortener-form button {
+    background-color: var(--primary-cyan);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .shortener-form button:hover {
+    opacity: 0.7;
+  }
+  
+  .shortener-form button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 768px) {
+    .shortener-form-container {
+      background-image: url('/images/bg-shorten-mobile.svg');
+      padding: 20px;
+      margin-top: -40px;
+    }
+  
+    .shortener-form {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .shortener-form button {
+      width: 100%;
+    }
+  }
