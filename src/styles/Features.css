@@ -77,8 +77,14 @@
     margin-bottom: 20px;
     position: relative;
     top: -60px;
+   
   }
   
+  .feature-icon img{
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
+  }
   .feature-card h3 {
     color: var(--neutral-very-dark-violet);
     margin-bottom: 15px;

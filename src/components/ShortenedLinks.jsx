@@ -14,6 +14,10 @@ const ShortenedLinks = ({ links }) => {
 
   return (
     <div className="shortened-links">
+      {/* <div className="features-intro shortedLink">
+          <h2>Shorted Links</h2>
+        </div> */}
+        
       {links.map((link, index) => (
         <div key={index} className="shortened-link">
           <div className="original-url">{link.original}</div>

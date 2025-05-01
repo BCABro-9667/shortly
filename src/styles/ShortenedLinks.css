@@ -1,5 +1,6 @@
 .shortened-links {
     margin: 30px 0 100px;
+
   }
   
   .shortened-link {
@@ -10,8 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid #2acfcf2c;
   }
-  
   .original-url {
     color: var(--neutral-very-dark-violet);
     margin-right: 20px;
